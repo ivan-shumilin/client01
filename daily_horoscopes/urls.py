@@ -6,6 +6,7 @@ from . import views
 urlpatterns = [
     path('api/forecast/', views.GetForecastInfoView.as_view()),
     path('', views.index, name='index'),
+    path('index1/', views.index1, name='index1'),
     path('register/', views.register, name='register'),
     path('accounts/login/', views.user_login, name='login'),
 ]

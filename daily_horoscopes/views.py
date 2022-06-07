@@ -95,6 +95,11 @@ def index(request):
     context = {'today': datetime.date.today(), }
     return render(request=request, template_name='index.html', context=context)
 
+def index1(request):
+    """ Функция для отображения главной страницы. """
+    context = {'today': datetime.date.today(), }
+    return render(request=request, template_name='index1.html', context=context)
+
 
 def register(request):
     """ Регистрация нового пользователя"""
